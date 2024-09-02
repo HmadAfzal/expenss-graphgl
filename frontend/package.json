@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "expense-tracker-gql": "file:.."
+  }
+}
