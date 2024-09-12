@@ -40,12 +40,12 @@ store.on("error", (err) => console.log(err));
 
 app.use(
 	session({
-		secret: process.env.SESSION_SECRET,
+		secret: 'supersecret',
 		resave: false,
 		saveUninitialized: false,
 		cookie: {
 			maxAge: 1000 * 60 * 60 * 24 * 7,
-			httpOnly: true,
+			httpOnly: true, 
 		},
 		store: store,
 	})
